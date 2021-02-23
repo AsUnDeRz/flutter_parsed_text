@@ -4,8 +4,9 @@ part of flutter_parsed_text;
 const emailPattern = r"\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b";
 
 /// URL Regex - A predefined type for handling URL matching
-const urlPattern =
-    r"[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:_\+.~#?&//=]*)";
+const urlPattern = r'(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+';
+// const urlPattern =
+//     r"[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:_\+.~#?&//=]*)";
 
 /// Phone Regex - A predefined type for handling phone matching
 const phonePattern =
